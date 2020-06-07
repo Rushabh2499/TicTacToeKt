@@ -111,6 +111,7 @@ fun checker(turn :Int): Int {
     }else if(check==gameSquare[1][1]){
         if(check==gameSquare[0][1] && check==gameSquare[2][1]) return turn
         else if(check==gameSquare[1][0] && check==gameSquare[1][2]) return turn
+        else if(check==gameSquare[0][2] && check==gameSquare[2][0]) return turn
     }else if(check==gameSquare[2][2]){
         if(check==gameSquare[2][1] && check==gameSquare[2][0]) return turn
         else if(check==gameSquare[0][2] && check==gameSquare[1][2]) return turn
